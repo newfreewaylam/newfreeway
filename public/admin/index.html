@@ -8,6 +8,12 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+ <script>
+  // 手動指定 config.yml 的路徑，確保它是從根目錄開始找
+  window.cms_config_url = "/admin/config.yml";
+</script>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
   </body>
 </html>
 
