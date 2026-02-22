@@ -7,10 +7,36 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <script>
-      // 關鍵修正：手動指定 config.yml 的完整路徑
-      window.cms_config_url = "/admin/config.yml";
-    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // 初始化 CMS 並直接帶入你的規格欄位
+      CMS.init({
+        config: {
+          backend: {
+            name: "git-gateway",
+            branch: "main",
+          },
+          media_folder: "public/images/uploads",
+          public_folder: "/images/uploads",
+          collections: [
+            {
+              name: "products",
+              label: "電腦產品",
+              folder: "src/content/products",
+              create: true,
+              fields: [
+                { label: "產品名稱", name: "title", widget: "string" },
+                { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" },
+                { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" },
+                { label: "記憶體 (RAM) ⚡", name: "ram", widget: "string" },
+                { label: "儲存空間 (SSD/HDD) 💾", name: "storage", widget: "string" },
+                { label: "價格", name: "price", widget: "number" },
+                { label: "詳細描述", name: "body", widget: "markdown" }
+              ],
+            },
+          ],
+        },
+      });
+    </script>
   </body>
 </html>
