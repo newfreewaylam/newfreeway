@@ -1,0 +1,5 @@
+欄位 ID,顯示名稱,類型
+cpu,處理器 (CPU) 🧠,文本 (Text)
+gpu,顯示卡 (GPU) 🎮,文本 (Text)
+ram,記憶體 (RAM) ⚡,文本 (Text)
+storage,儲存空間 (SSD/HDD) 💾,文本 (Text)
