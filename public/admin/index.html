@@ -7,26 +7,10 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    <script>
+      // 關鍵修正：手動指定 config.yml 的完整路徑
+      window.cms_config_url = "/admin/config.yml";
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
- <script>
-  // 手動指定 config.yml 的路徑，確保它是從根目錄開始找
-  window.cms_config_url = "/admin/config.yml";
-</script>
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  
   </body>
 </html>
-
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
