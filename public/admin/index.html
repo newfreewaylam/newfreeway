@@ -5,55 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google" content="notranslate" />
     <title>New Freeway Admin</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // 3. 設定 CMS 參數
-      const config = {
-        backend: {
-  name: "github", // 改為 github
-  repo: "newfreewaylam/newfreeway", // 例如: "newfreeway/my-site"
-  branch: "main",
-},
-        load_config_file: false,
-        media_folder: "public/images/uploads",
-        public_folder: "/images/uploads",
-        collections: [
-          {
-            name: "products",
-            label: "電腦產品",
-            folder: "src/content/products",
-            create: true,
-            slug: "{{slug}}",
-            fields: [
-              { label: "產品名稱", name: "title", widget: "string" },
-              { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" },
-              { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" },
-              { label: "價格", name: "price", widget: "number" },
-              { label: "詳細描述", name: "body", widget: "markdown" }
-            ],
+      // 這裡直接定義所有規格，不依賴外部 config.yml
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "newfreewaylam/newfreeway", // 你的倉庫路徑
+            branch: "main",
+            site_domain: "newfreewaylam-newfreeway.vercel.app",
+            base_url: "https://api.netlify.com" // 借用 Netlify 的 OAuth 橋樑
           },
-        ],
-      };
-
-      // 4. 關鍵：等待 Identity 初始化後再啟動 CMS
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-          // Identity 準備好了，啟動 CMS
-          CMS.init({ config });
-        });
-      } else {
-        // 如果 Identity 沒載入，直接啟動
-        CMS.init({ config });
-      }
+          load_config_file: false, // 關鍵：強制不讀取外部 config.yml
+          media_folder: "public/images/uploads",
+          public_folder: "/images/uploads",
+          collections: [
+            {
+              name: "products",
+              label: "電腦產品",
+              folder: "src/content/products",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "產品名稱", name: "title", widget: "string" },
+                { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" },
+                { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" },
+                { label: "記憶體 (RAM) ⚡", name: "ram", widget: "string" },
+                { label: "儲存空間 (SSD/HDD) 💾", name: "storage", widget: "string" },
+                { label: "價格", name: "price", widget: "number" },
+                { label: "詳細描述", name: "body", widget: "markdown" }
+              ],
+            },
+          ],
+        },
+      });
     </script>
   </body>
 </html>
