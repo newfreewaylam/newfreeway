@@ -14,9 +14,10 @@
       // 3. 設定 CMS 參數
       const config = {
         backend: {
-          name: "git-gateway",
-          branch: "main",
-        },
+  name: "github", // 改為 github
+  repo: "你的GitHub帳號/你的倉庫名稱", // 例如: "newfreeway/my-site"
+  branch: "main",
+},
         load_config_file: false,
         media_folder: "public/images/uploads",
         public_folder: "/images/uploads",
