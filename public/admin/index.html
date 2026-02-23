@@ -17,11 +17,14 @@
         CMS.init({
           config: {
             backend: {
-              name: "github",
-              repo: "newfreewaylam/newfreeway",
-              branch: "main",
-              base_url: "https://api.netlify.com"
-            },
+  name: "github",
+  repo: "newfreewaylam/newfreeway",
+  branch: "main",
+  // 將 base_url 改為這個專門給非 Netlify 平台使用的門衛
+  base_url: "https://decap-cms-oauth-gh.vercel.app", 
+  // 或者是另一個常見的
+  // base_url: "https://cms-demo-auth.vercel.app"
+},
             load_config_file: false, // 雖然有實體檔案，但我們還是告訴它讀這裡的 code
             media_folder: "public/images/uploads",
             public_folder: "/images/uploads",
