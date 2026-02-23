@@ -12,42 +12,38 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // 3. 徹底切斷自動加載，使用手動 init
-      window.CMS_MANUAL_INIT = true; 
-
-      CMS.init({
-        config: {
-          backend: {
-            name: "github",
-            repo: "newfreewaylam/newfreeway",
-            branch: "main",
-            base_url: "https://api.netlify.com",
-            site_domain: "newfreewaylam-newfreeway.vercel.app"
-          },
-          display_url: "https://newfreewaylam-newfreeway.vercel.app",
-          load_config_file: false, // 再次強調不讀取檔案
-          media_folder: "public/images/uploads",
-          public_folder: "/images/uploads",
-          collections: [
-            {
-              name: "products",
-              label: "電腦產品",
-              folder: "src/content/products",
-              create: true,
-              slug: "{{slug}}",
-              fields: [
-                { label: "產品名稱", name: "title", widget: "string" },
-                { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" },
-                { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" },
-                { label: "記憶體 (RAM) ⚡", name: "ram", widget: "string" },
-                { label: "儲存空間 (SSD/HDD) 💾", name: "storage", widget: "string" },
-                { label: "價格", name: "price", widget: "number" },
-                { label: "詳細描述", name: "body", widget: "markdown" }
-              ],
+      // 3. 延遲啟動，確保環境穩定
+      setTimeout(() => {
+        CMS.init({
+          config: {
+            backend: {
+              name: "github",
+              repo: "newfreewaylam/newfreeway",
+              branch: "main",
+              base_url: "https://api.netlify.com"
             },
-          ],
-        },
-      });
+            load_config_file: false, // 雖然有實體檔案，但我們還是告訴它讀這裡的 code
+            media_folder: "public/images/uploads",
+            public_folder: "/images/uploads",
+            collections: [
+              {
+                name: "products",
+                label: "電腦產品",
+                folder: "src/content/products",
+                create: true,
+                slug: "{{slug}}",
+                fields: [
+                  { label: "產品名稱", name: "title", widget: "string" },
+                  { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" },
+                  { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" },
+                  { label: "價格", name: "price", widget: "number" },
+                  { label: "詳細描述", name: "body", widget: "markdown" }
+                ],
+              },
+            ],
+          },
+        });
+      }, 500); // 延遲半秒啟動
     </script>
   </body>
 </html>
