@@ -5,19 +5,19 @@ backend:
 media_folder: "public/images/uploads" # 產品圖片存放位置
 public_folder: "/images/uploads"
 
-collections: [
-  {
-    name: "products",
-    label: "電腦產品",
-    folder: "src/content/products",   // 確認路徑
-    slug: "{{slug}}",                  // 自動化檔名
-    create: true,
-    fields: [
-      { label: "產品名稱", name: "title", widget: "string" },
-      { label: "處理器 (CPU)", name: "cpu", widget: "string" },
-      { label: "顯示卡 (GPU)", name: "gpu", widget: "string" },
-      { label: "價格", name: "price", widget: "number" },
-      { label: "詳細描述", name: "body", widget: "markdown" }
-    ],
-  },
-],
+collections:
+  - name: "products"
+    label: "電腦產品"
+    folder: "src/content/products" # 產品資料存成 Markdown 的位置
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "產品名稱", name: "title", widget: "string" }
+      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - { label: "處理器 (CPU) 🧠", name: "cpu", widget: "string" }
+      - { label: "顯示卡 (GPU) 🎮", name: "gpu", widget: "string" }
+      - { label: "記憶體 (RAM) ⚡", name: "ram", widget: "string" }
+      - { label: "儲存空間 (SSD/HDD) 💾", name: "storage", widget: "string" }
+      - { label: "價格", name: "price", widget: "number" }
+      - { label: "產品圖片", name: "image", widget: "image" }
+      - { label: "詳細描述", name: "body", widget: "markdown" }
