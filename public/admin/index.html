@@ -7,20 +7,25 @@
     <title>New Freeway Admin</title>
   </head>
   <body>
+    <div id="nc-root"></div>
+
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // 這裡直接定義所有規格，不依賴外部 config.yml
+      // 3. 徹底切斷自動加載，使用手動 init
+      window.CMS_MANUAL_INIT = true; 
+
       CMS.init({
         config: {
           backend: {
             name: "github",
-            repo: "newfreewaylam/newfreeway", // 你的倉庫路徑
+            repo: "newfreewaylam/newfreeway",
             branch: "main",
-            site_domain: "newfreewaylam-newfreeway.vercel.app",
-            base_url: "https://api.netlify.com" // 借用 Netlify 的 OAuth 橋樑
+            base_url: "https://api.netlify.com",
+            site_domain: "newfreewaylam-newfreeway.vercel.app"
           },
-          load_config_file: false, // 關鍵：強制不讀取外部 config.yml
+          display_url: "https://newfreewaylam-newfreeway.vercel.app",
+          load_config_file: false, // 再次強調不讀取檔案
           media_folder: "public/images/uploads",
           public_folder: "/images/uploads",
           collections: [
