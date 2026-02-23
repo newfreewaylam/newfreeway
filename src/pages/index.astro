@@ -1,26 +1,20 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8" />
-    <title>New Freeway 電腦公司</title>
-    
-  </head>
-  <body>
-    <h1>歡迎來到 New Freeway 🛠️</h1>
-    <p>網站建置中，請點擊下方或訪問 /admin 管理產品。</p>
-    
-    <script>
-      // 登入後自動跳轉的邏輯
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-  </body>
-</html>
+<BaseLayout title="New Freeway 電腦公司">
+  <h1>歡迎來到 New Freeway 🛠️</h1>
+  <p>網站建置中，請點擊下方或訪問 /admin 管理產品。</p>
+  
+  <script>
+    // 登入後自動跳轉的邏輯
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</BaseLayout>

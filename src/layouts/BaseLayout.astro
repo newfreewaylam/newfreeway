@@ -1,0 +1,24 @@
+---
+import SpeedInsights from '@vercel/speed-insights/astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'New Freeway 電腦公司', description = 'New Freeway 電腦公司官方網站' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <slot />
+    <SpeedInsights />
+  </body>
+</html>
