@@ -1,1 +1,22 @@
 # Empty config to prevent 404
+backend:
+  name: git-gateway # or 'github', 'gitlab', 'bitbucket', etc.
+  branch: main # replace 'main' with your repository's primary branch name
+
+media_folder: "static/uploads" # Path to the folder where media files will be stored in your repo
+public_folder: "/uploads" # The public path to the media folder
+
+media_library:
+  name: uploads # Or a different name, if desired
+
+collections:
+  # This is an array where you define your content types
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true # Allow users to create new documents
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      # Add more fields as needed
