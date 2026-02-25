@@ -1,4 +1,3 @@
-# Empty config to prevent 404
 backend:
   name: git-gateway # or 'github', 'gitlab', 'bitbucket', etc.
   branch: main # replace 'main' with your repository's primary branch name
