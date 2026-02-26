@@ -1,0 +1,150 @@
+!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NewFreeway</title>
+<style type="text/css">
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #00C;
+}
+.style1 {
+	color: #FF0000
+}
+.style2 {
+	color: #0000FF
+}
+.style3 {
+	color: #000000;
+}
+.style4 {
+	color: #33CC66
+}
+.style5 {
+	color: #003300
+}
+.style6 {
+	font-size: 14px
+}
+body {
+	background-image: url();
+	background-color: #D4D0C8;
+	background-repeat: no-repeat;
+}
+.style7 {
+	font-size: 12px
+}
+#apDiv1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+}
+.style9 {font-size: 16px}
+.style11 {font-size: 24px}
+</style>
+<script type="text/javascript">
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body bgcolor="#FFFFFF" onload="MM_preloadImages('public-html/img/homepageb1.jpg','public-html/img/homep1.png','public-html/img/newpcsell.gif','public-html/img/mainjob.gif','public-html/img/contactus.gif','../../Desktop/HOMEPAGE/product_ismpos.gif','public-html/img/product_ismpos.gif','public-html/photo/untitled.jpg','public-html/img/130822  lenovo-desktops-thinkcentre-brand.png','public-html/photo/P_setting_fff_1_90_end_130.jpg','public-html/photo/core-desktop-hdd-270x270.jpg','public-html/img/pos.jpg')">
+<center>
+<table width="1052" height="49" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="548" height="47" valign="middle" bgcolor="#CCCCCC"><h1><strong><em>NewFreeway </em></strong><span class="style9"><span class="style7">Computer Network System</span></span></h1>
+      <h1><span class="style9"><span class="style11">新飛越</span> 電腦網絡系統 </span></h1>
+      </td>
+    <td width="65" id="homepageb1"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('image1','','public-html/img/homepageb1.jpg',1)"><img src="public-html/img/homepageb1.jpg" width="61" height="47" id="image1" align="absmiddle" /></a></td>
+    <td width="157" align="center"><a href="newsproduct.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','public-html/img/newpcsell.gif',1)"><img src="public-html/img/newpcsell.gif" name="Image3" width="126" height="38" align="absmiddle" id="Image3" /></a></td>
+    <td width="121" align="center"><a href="mainjob.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','public-html/img/mainjob.gif',1)"><img src="public-html/img/mainjob.gif" width="100" height="45" id="Image4" align="absmiddle" /></a></td>
+    <td width="126" align="center"><a href="contact.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','public-html/img/contactus.gif',1)"><img src="public-html/img/contactus.gif" width="127" height="42" align="absmiddle" id="Image5" /></a></td>
+    <td width="10">&nbsp;</td>
+    <td width="25">&nbsp;</td>
+  </tr>
+</table>
+<blockquote>
+  <h3 class="style2 style7">*ASUS *<span class="style3">LINKSYS</span>* EPSON* <span class="style4">esetNOD32</span> *<span class="style3">Seagate</span> *<span class="style1">Kingston</span>* Lenovo <span class="style1">Think</span><span class="style3">Centra</span> *<span class="style5">apple</span>*IBM*HP*<span class="style3">AMP</span>*WD*<span class="style1">BUFFALO</span>*Logitech</h3>
+  <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../../Desktop/HOMEPAGE/product_ismpos.gif',1)"><a href="public-html/doc/ISMPOS Leaflet output_final.pdf" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../../Desktop/HOMEPAGE/product_ismpos.gif',1)"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../../Desktop/HOMEPAGE/product_ismpos.gif',1)"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../../Desktop/HOMEPAGE/product_ismpos.gif',1)"></a><a href="public-html/doc/backschool.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image17','','public-html/img/backschool.png',1)"><img src="public-html/img/backschool.png" alt="" name="Image17" width="387" height="118" border="0" id="Image17" /></a></a> </a><a href="public-html/doc/ISMPOS Leaflet output_final.pdf" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','public-html/img/product_ismpos.gif',1)"><img src="public-html/img/pos.jpg" alt="" name="Image13" width="425" height="117" border="0" id="Image13" /></a>
+  <h3 class="style2"><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"></a><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"></a><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"></a><a href="main.html" target="_top" onmouseover="MM_swapImage('Image2','','public-html/img/homep1.png',1)" onmouseout="MM_swapImgRestore()"><img src="public-html/photo/183.jpg" alt="" name="Image2" width="228" height="133" hspace="0" vspace="0" border="0" align="absmiddle" id="Image2" /></a></a></a></a><a href="http://www.apple.com/hk/mac/" target="_blank"> <img src="public-html/photo/apple1.jpg" width="312" height="129" align="absmiddle" class="style1" /></a><a href="http://www.asus.com/tw/Notebooks_Ultrabooks/G501JW/"> <img src="public-html/photo/P_setting_fff_1_90_end_130.jpg" alt="" width="149" height="132" align="top" /></a><a href="http://www.asus.com/tw/Phones/ZenFone_2_ZE551ML/"><a href="http://www.asus.com/tw/Phones/ZenFone_2_ZE551ML/"><a href="http://www.asus.com/tw/Phones/ZenFone_2_ZE551ML/"><img src="public-html/photo/zenfone2.jpg" alt="" width="165" height="134" align="absmiddle" /></a></a></a></h3>
+</blockquote>
+<table width="1048" height="1025" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="1044" height="1023" align="center" valign="top" bordercolor="#FFFFFF" background="public-html/img/BACKGROUP.jpg" bgcolor="#FFFFFF"><div align="right">
+        <p align="center"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','public-html/img/product_ismpos.gif',1)"><img src="public-html/img/s12.png" name="Image10" width="126" height="129" border="0" id="Image10" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','public-html/photo/untitled.jpg',1)"> <img src="public-html/img/s16.png" name="Image11" width="126" height="136" border="0" id="Image11" /> </a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','public-html/img/130822  lenovo-desktops-thinkcentre-brand.png',1)"><img src="public-html/img/s17.png" name="Image12" width="127" height="136" border="0" id="Image12" /> </a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','public-html/photo/P_setting_fff_1_90_end_130.jpg',1)"><img src="public-html/img/s14.png" name="Image14" width="121" height="133" border="0" id="Image14" /> </a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','public-html/photo/core-desktop-hdd-270x270.jpg',1)"> <img src="public-html/img/s18.png" name="Image15" width="125" height="137" border="0" id="Image15" /></a>        </p>
+        
+        <div align="center">
+          <!-- Begin DWUser_EasyRotator -->
+          <script type="text/javascript" src="http://c520866.r66.cf2.rackcdn.com/1/js/easy_rotator.min.js"></script>
+          <p></p>
+          <p></p>
+          <div class="dwuserEasyRotator" style="width: 800px; height: 580px; position:relative; text-align: left;" data-erconfig="{autoplayEnabled:true, lpp:'102-105-108-101-58-47-47-47-67-58-47-85-115-101-114-115-47-72-80-47-68-111-99-117-109-101-110-116-115-47-69-97-115-121-82-111-116-97-116-111-114-80-114-101-118-105-101-119-47-112-114-101-118-105-101-119-95-115-119-102-115-47', wv:1, autoplayDelay:2000}" data-ername="newindex" data-ertid="{x8sh2n431z4870007034441}">
+            <div data-ertype="content" style="display: none;">
+              <ul data-erlabel="Category 1">
+                <li> <img class="main" src="public-html/photo/183.jpg" /> <span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;"> <img class="thumb" src="public-html/photo/183.jpg" /> </span> </li>
+                <li> <img class="main" src="public-html/photo/xfs_500x400_s100_fg.jpg" /> <span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;"> <img class="thumb" src="public-html/photo/xfs_500x400_s100_fg.jpg" /> </span> </li>
+                <li> <img class="main" src="public-html/photo/xfs_500x400_s100_P_500.jpg" /> <span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;"> <img class="thumb" src="public-html/photo/xfs_500x400_s100_P_500.jpg" /> </span> </li>
+                <li> <img class="main" src="public-html/photo/fg00.png" /> <img class="thumb" src="public-html/photo/fg00.png" /> </li>
+              </ul>
+            </div>
+            <div data-ertype="layout" data-ertemplatename="NONE">
+              <div class="erimgMain" style="position: absolute; left:0;right:0;top:0;bottom:0;" data-erconfig="{___numTiles:3, scaleMode:'fillArea', imgType:'main', __loopNextButton:false, arrowButtonMode:'rollover'}">
+                <div class="erimgMain_slides" style="position: absolute; left:0px; top:0; bottom:0; right:0px;">
+                  <div class="erimgMain_slide">
+                    <div class="erimgMain_img" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                  </div>
+                </div>
+                <div class="erimgMain_arrowLeft" style="position:absolute; left: 10px; top: 50%; margin-top: -15px;" data-erconfig="{image:'circleSmall', image2:'circleSmall'}"></div>
+                <div class="erimgMain_arrowRight" style="position:absolute; right: 10px; top: 50%; margin-top: -15px;"></div>
+              </div>
+              <div class="erimgMain rotatorTileNav" style="position: absolute; left:27px;width:490px;bottom:20px;height:64px;" data-erconfig="{numTiles:5, scaleMode:'fillArea', imgType:'thumb', loopNextButton:false, arrowButtonMode:'rollover', __slideLinkEvent:'rollover'}">
+                <div class="erimgMain_slides" style="position: absolute; left:0px; top:0; bottom:0; right:0px;">
+                  <div class="erimgMain_slide">
+                    <div class="selectionArrow visibleWhenSelected" style="position: absolute; top: 0; left: 0; right: 6px; bottom: 0; background: #FFF;"></div>
+                    <div class="erimgMain_img" style="position: absolute; left: 2px; right: 8px; top: 2px; bottom: 2px; border: 2px solid #FFF;"></div>
+                  </div>
+                </div>
+                <!-- 
+				<div class="erimgMain_arrowLeft" style="position:absolute; left: 60px; top: 50%; margin-top: -10px;" data-erConfig="{image:'circleSmall', image2:'circleSmall'}"></div>
+				<div class="erimgMain_arrowRight" style="position:absolute; right: 60px; top: 50%; margin-top: -10px;"></div>
+				-->
+              </div>
+              <div class="erabout erFixCSS3" style="color: #FFF; text-align: left; background: #000; background:rgba(0,0,0,0.93); border: 2px solid #FFF; padding: 20px; font: normal 11px/14px Verdana,_sans; width: 300px; border-radius: 10px; display:none;"><span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;"> This <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">jQuery slider</a> was created with the free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">EasyRotator</a> software from DWUser.com. <br />
+                    <br />
+                Use WordPress? The free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">EasyRotator for WordPress</a> plugin lets you create beautiful <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">WordPress sliders</a> in seconds. <br />
+                <br />
+                <a style="color:#FFF;" href="#" class="erabout_ok">OK</a> </span></div>
+              <span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px; height: 221px;">
+              <noscript>
+                Rotator powered by <a href="http://www.dwuser.com/easyrotator/">EasyRotator</a>, a free and easy jQuery slider builder from DWUser.com.  Please enable JavaScript to view.
+                </noscript>
+              <script type="text/javascript">/*Avoid IE gzip bug*/(function(b,c,d){try{if(!b[d]){b[d]="temp";var a=c.createElement("script");a.type="text/javascript";a.src="http://easyrotator.s3.amazonaws.com/1/js/nozip/easy_rotator.min.js";c.getElementsByTagName("head")[0].appendChild(a)}}catch(e){alert("EasyRotator fail; contact support.")}})(window,document,"er_$144");</script>
+            </span></div>
+          </div>
+          <!-- End DWUser_EasyRotator -->
+        </div>
+    </div></td>
+  </tr>
+</table>
+<p align="center" class="style6">Copyright ©2001 NEWFREEWAY COMPUTER NETWORK SYSTEM. All rights reserved.</p>
+</center>
+</body>
+</html>
