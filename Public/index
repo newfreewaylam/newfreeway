@@ -1,0 +1,21 @@
+300px; border-radius: 10px; display:none;"><span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px;"> This <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">jQuery slider</a> was created with the free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/" target="_blank">EasyRotator</a> software from DWUser.com. <br />
+                    <br />
+                Use WordPress? The free <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">EasyRotator for WordPress</a> plugin lets you create beautiful <a style="color:#FFF;" href="http://www.dwuser.com/easyrotator/wordpress/" target="_blank">WordPress sliders</a> in seconds. <br />
+                <br />
+                <a style="color:#FFF;" href="#" class="erabout_ok">OK</a> </span></div>
+              <span style="position: absolute; left: 0; right: 0; top: 50px; bottom: 50px; height: 221px;">
+              <noscript>
+                Rotator powered by <a href="http://www.dwuser.com/easyrotator/">EasyRotator</a>, a free and easy jQuery slider builder from DWUser.com.  Please enable JavaScript to view.
+                </noscript>
+              <script type="text/javascript">/*Avoid IE gzip bug*/(function(b,c,d){try{if(!b[d]){b[d]="temp";var a=c.createElement("script");a.type="text/javascript";a.src="http://easyrotator.s3.amazonaws.com/1/js/nozip/easy_rotator.min.js";c.getElementsByTagName("head")[0].appendChild(a)}}catch(e){alert("EasyRotator fail; contact support.")}})(window,document,"er_$144");</script>
+            </span></div>
+          </div>
+          <!-- End DWUser_EasyRotator -->
+        </div>
+    </div></td>
+  </tr>
+</table>
+<p align="center" class="style6">Copyright ©2001 NEWFREEWAY COMPUTER NETWORK SYSTEM. All rights reserved.</p>
+</center>
+</body>
+</html>
